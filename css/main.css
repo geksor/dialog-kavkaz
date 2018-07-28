@@ -1225,7 +1225,7 @@ html {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap {
+.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -2379,7 +2379,7 @@ html {
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_title, .productLineTitle, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail {
+.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2409,7 +2409,7 @@ html {
 .fs_18, .h {
   font-size: 18px; }
 
-.fs_24, .def_title, .productLineTitle {
+.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
   font-size: 24px; }
 
 .fs_30 {
@@ -2424,7 +2424,7 @@ html {
 .fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .prodCat {
   color: #7e7e7e; }
 
-.fc_2e2e2e, .def_title, .productLineTitle, .header__menuLinkItem, .prodName {
+.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__menuLinkItem, .prodName {
   color: #2e2e2e; }
 
 .fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail {
@@ -2448,16 +2448,16 @@ html {
 .fls_15 {
   letter-spacing: 1.5px; }
 
-.fls_18, .def_title, .productLineTitle {
+.fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
   letter-spacing: 1.8px; }
 
-.text-align_center, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail {
+.text-align_center, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .brandWrap {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton {
+.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton {
   text-transform: uppercase; }
 
-.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap {
+.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
   display: flex; }
 
 .flex_col, .page {
@@ -2565,10 +2565,10 @@ body {
       fill: #ffffff; }
 
 @media (min-width: 576px) {
-  .def_title, .productLineTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
     font-size: 32px; } }
 @media (min-width: 768px) {
-  .def_title, .productLineTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
     font-size: 36px; } }
 
 .def_desc {
@@ -2772,6 +2772,19 @@ body {
     margin-right: 6px; }
   .starBlock.active {
     background-image: url("../images/1.png"); }
+
+.brandsLine {
+  padding-top: 100px;
+  padding-bottom: 40px; }
+
+.brandsLineTitle {
+  margin-bottom: 76px; }
+
+.optLine {
+  padding: 100px 0 40px; }
+
+.optTitle {
+  margin-bottom: 75px; }
 
 .btn-hamburger {
   display: none;

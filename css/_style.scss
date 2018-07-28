@@ -562,3 +562,23 @@ body{
     background-image: url("../images/1.png");
   }
 }
+
+.brandsLine{
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.brandsLineTitle{
+  @extend .def_title;
+  margin-bottom: 76px;
+}
+.brandWrap{
+  @extend .flex,.align-items-center,.text-align_center;
+}
+
+.optLine{
+  padding: 100px 0 40px;
+}
+.optTitle{
+  @extend .def_title;
+  margin-bottom: 75px;
+}
