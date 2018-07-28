@@ -1,0 +1,99 @@
+.check_mask{
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: solid 1px #cfd8dd;
+  transition: border-color ease-in-out .5s;
+  .checkedImg{
+    width: 100%;
+    opacity: 0;
+    transition: opacity .1s ease;
+  }
+}
+.form_check:checked+.check_mask > .checkedImg{
+  opacity: 1;
+}
+.agree_lable{
+  cursor: pointer;
+}
+.form_check{
+  display: none;
+}
+
+.form{
+  position: relative;
+  &.popUp_form{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    .formBody{
+      background-color: #ffffff;
+    }
+    .close{
+      cursor: pointer;
+    }
+  }
+}
+.agree_text{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 20px 0;
+  z-index: 6;
+}
+.h{
+  @extend .fs_18;
+  padding-bottom: 20px;
+}
+.agreeText{
+  margin-bottom: 20px;
+  width: 100%;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border: thin solid #929292;
+}
+.but_block{
+  padding-top: 20px;
+  button{
+    margin-bottom: 20px;
+  }
+}
+.btn_agree{
+  width: 180px;
+}
+
+#mess_block{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 90vw;
+  max-width: 500px;
+  max-height: 300px;
+  margin: auto;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 9px 20px 9px rgba(0, 0, 0, 0.43);
+}
+#mess{
+  font-size: 22px;
+}
+.messBlock__button{
+  margin-top: 20px;
+}

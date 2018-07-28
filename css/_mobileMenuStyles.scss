@@ -1,0 +1,71 @@
+.btn-hamburger {
+  display: none;
+  max-width: 48px;
+  max-height: 48px;
+  width: 11vw;
+  height: 11vw;
+  padding: 0;
+  text-align: center;
+}
+.slideout-open .slideout-menu {
+  display: block;
+}
+.slideout-panel {
+  position: relative;
+  z-index: 5;
+  will-change: transform;
+  height: 100%;
+}
+.slideout-menu {
+  background-color: $mobileMenuOpenColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5) !important;
+  z-index: 99;
+}
+.shadow:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5) !important;
+  z-index: 99;
+}
+.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
+  overflow: hidden;
+}
+@media (min-width: 1px) and (max-width: 1023px) {
+  .btn-hamburger {
+    display: block;
+  }
+  .topLine .cont {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
