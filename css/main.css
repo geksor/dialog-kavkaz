@@ -2379,13 +2379,13 @@ html {
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail {
+.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .optLine b, .socTitle, .signUpTitle, .signUpSubmit {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Regular;
   src: url(../css/fonts/Montserrat-Regular.ttf); }
-.f_Montserrat-Regular, body, .def_desc, .header__variantLabel .description, .header__getCity, .header__workMode, .searchInput, .header__sessionLink {
+.f_Montserrat-Regular, body, .def_desc, .header__variantLabel .description, .header__getCity, .header__workMode, .searchInput, .header__sessionLink, .optLine, .footer__logoText, .footer__menuLinkItem, .signUpInput, .footer__copyrightLine {
   font-family: Montserrat-Regular, sans-serif; }
 
 @font-face {
@@ -2397,10 +2397,10 @@ html {
 .fs_10, .header__sessionLink {
   font-size: 10px; }
 
-.fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat {
+.fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat, .footer__menuLinkItem {
   font-size: 12px; }
 
-.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodAvail {
+.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodAvail, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit {
   font-size: 14px; }
 
 .fs_16, .left_menu {
@@ -2418,25 +2418,25 @@ html {
 .fs_36 {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton {
+.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
   color: #ffffff; }
 
-.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .prodCat {
+.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .prodCat, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine {
   color: #7e7e7e; }
 
-.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__menuLinkItem, .prodName {
+.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__menuLinkItem, .prodName, .optLine b {
   color: #2e2e2e; }
 
 .fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail {
   color: #47b5b6; }
 
-.fls_05, .header__sessionLink {
+.fls_05, .header__sessionLink, .footer__logoText {
   letter-spacing: .5px; }
 
-.fls_06, .header__variantLabel .description, .header__getCity, .header__workMode {
+.fls_06, .header__variantLabel .description, .header__getCity, .header__workMode, .footer__menuLinkItem {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodCat, .prodAvail {
+.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodCat, .prodAvail, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit {
   letter-spacing: .7px; }
 
 .fls_08 {
@@ -2451,10 +2451,13 @@ html {
 .fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
   letter-spacing: 1.8px; }
 
+.flh_24, .optLine {
+  line-height: 24px; }
+
 .text-align_center, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .brandWrap {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton {
+.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .footer__menuLinkItem, .socTitle, .signUpSubmit {
   text-transform: uppercase; }
 
 .flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
@@ -2586,7 +2589,7 @@ body {
 .transitionColorBgndColor {
   transition: color .3s ease, background-color .3s ease; }
 
-.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .slideNavBtn {
+.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .slideNavBtn, .signUpSubmit {
   transition: .3s ease; }
 
 .def_button, .header__callBackBtn, .prodBuyButton {
@@ -2781,10 +2784,64 @@ body {
   margin-bottom: 76px; }
 
 .optLine {
-  padding: 100px 0 40px; }
+  padding: 100px 0 568px;
+  background: no-repeat bottom url("../images/9.png"); }
+  .optLine p, .optLine ul {
+    margin-bottom: 35px; }
+  .optLine .ulTitle {
+    line-height: 36px;
+    margin: 0; }
+    .optLine .ulTitle .purple {
+      color: #d55e93; }
+  .optLine ul {
+    line-height: 36px; }
 
 .optTitle {
   margin-bottom: 75px; }
+
+.footer {
+  background-color: #2e2e2e;
+  padding: 85px 0 35px; }
+
+.footer__logoWrap {
+  height: 100%; }
+
+.footer__logo {
+  font-size: 0; }
+
+.footer__logoText {
+  font-size: 10px; }
+
+.footer__menuLinkItem {
+  text-decoration: underline;
+  line-height: 30px; }
+  .footer__menuLinkItem:hover {
+    color: #7e7e7e; }
+
+.socTitle {
+  margin-bottom: 30px; }
+
+.signUpTitle {
+  margin-bottom: 30px; }
+
+.signUpForm {
+  border-radius: 8px;
+  overflow: hidden; }
+
+.signUpInput {
+  background-color: #ffffff;
+  padding: 19px; }
+
+.signUpSubmit {
+  background-color: #e269c4;
+  padding: 0 23px; }
+  .signUpSubmit:hover {
+    background-color: #b55b97; }
+
+.footer__copyrightLine {
+  font-size: 10px;
+  letter-spacing: .5px;
+  margin-top: 55px; }
 
 .btn-hamburger {
   display: none;
