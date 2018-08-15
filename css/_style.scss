@@ -378,10 +378,10 @@ body{
   @extend .fc_7e7e7e;
 }
 .header__mainLine{
+  //padding-top: 25px;
 }
 .header__logoWrap{
   padding-top: 25px;
-
 }
 .searchForm{
   @extend .relative;
@@ -415,12 +415,21 @@ body{
     @extend .flex,.align-items-center,.justify-content-between,.flex-column;
     min-height: 55px;
   }
+  @include media-breakpoint-down(lg){
+    padding: 0 10px;
+  }
 }
 .header__menuLine{
-  padding: 20px 0;
+  padding-top: 20px;
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+}
+.header__menuItem{
+  padding-bottom: 20px;
 }
 .header__menuLinkItem{
-  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_2e2e2e,.flex,.align-items-center,.text-transform_uppercase,.transitionColor;
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_2e2e2e,.flex,.align-items-center,.justify-content-center,.text-transform_uppercase,.transitionColor;
   &.active{
     color: #b86ad9;
   }
@@ -429,6 +438,9 @@ body{
   }
   svg{
     margin-left: 5px;
+  }
+  @media (min-width: 1199.98px) and (max-width: 1350px) {
+    font-size: 12px;
   }
 }
 
@@ -479,6 +491,10 @@ body{
 .productLineTitle{
   @extend .def_title;
   margin-bottom: 80px;
+}
+.productBlock{
+  @extend .flex,.flex-column,.justify-content-between;
+  height: 100%;
 }
 .prodBlock__imgWrap{
   @extend .relative;
@@ -619,6 +635,11 @@ body{
   @extend .f_Montserrat-Regular,.fc_7e7e7e,.fls_05;
   font-size: 10px;
 }
+.footer__menuWrap{
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+}
 .footer__menuLinkItem{
   @extend .f_Montserrat-Regular,.fs_12,.fls_06,.fc_fff,.text-transform_uppercase;
   text-decoration: underline;
@@ -626,12 +647,19 @@ body{
   &:hover{
     color: #7e7e7e;
   }
+  @media (max-width: 1350px) {
+    font-size: 10px;
+  }
 }
 .socTitle{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff,.text-transform_uppercase;
   margin-bottom: 30px;
 }
-
+.signUpWrap{
+  @include media-breakpoint-down(lg){
+    margin: 30px auto 0;
+  }
+}
 .signUpTitle{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff;
   margin-bottom: 30px;

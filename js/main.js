@@ -240,8 +240,23 @@ $('.productSlider').each(function () {
         '                                  d="M0.180,10.954 L4.684,5.992 L0.179,1.029 C-0.035,0.793 -0.035,0.410 0.179,0.173 C0.394,-0.063 0.742,-0.063 0.956,0.173 L5.849,5.564 L5.849,5.564 L5.849,5.564 C6.064,5.800 6.064,6.183 5.849,6.419 L0.957,11.809 C0.742,12.045 0.393,12.045 0.179,11.809 C-0.035,11.574 -0.035,11.190 0.180,10.954 Z"/>\n' +
         '                        </svg>\n' +
         '                    </button>',
-        appendArrows: $($(this).data('arrow'))
+        appendArrows: $($(this).data('arrow')),
+        responsive: [
+            {
+                breakpoint: 1199.98,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]
     });
+});
+$('.productSlider').on('setPosition', function () {
+    $(this).find('.slick-slide').height('auto');
+    var slickTrack = $(this).find('.slick-track');
+    var slickTrackHeight = $(slickTrack).height();
+    $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
 });
 
 

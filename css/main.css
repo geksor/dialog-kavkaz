@@ -1186,7 +1186,7 @@ html {
 .flex-row {
   flex-direction: row !important; }
 
-.flex-column, .header__sessionLink a {
+.flex-column, .header__sessionLink a, .productBlock {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -1210,10 +1210,10 @@ html {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .prodStarWrap {
+.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .header__menuLinkItem, .prodStarWrap {
   justify-content: center !important; }
 
-.justify-content-between, .header__sessionLink a {
+.justify-content-between, .header__sessionLink a, .productBlock {
   justify-content: space-between !important; }
 
 .justify-content-around {
@@ -2460,7 +2460,7 @@ html {
 .text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .footer__menuLinkItem, .socTitle, .signUpSubmit {
   text-transform: uppercase; }
 
-.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
+.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap {
   display: flex; }
 
 .flex_col, .page {
@@ -2666,9 +2666,18 @@ body {
 
 .header__sessionLink a {
   min-height: 55px; }
+@media (max-width: 1199.98px) {
+  .header__sessionLink {
+    padding: 0 10px; } }
 
 .header__menuLine {
-  padding: 20px 0; }
+  padding-top: 20px; }
+  @media (max-width: 991.98px) {
+    .header__menuLine {
+      display: none; } }
+
+.header__menuItem {
+  padding-bottom: 20px; }
 
 .header__menuLinkItem.active {
   color: #b86ad9; }
@@ -2676,6 +2685,9 @@ body {
   color: #e269c4; }
 .header__menuLinkItem svg {
   margin-left: 5px; }
+@media (min-width: 1199.98px) and (max-width: 1350px) {
+  .header__menuLinkItem {
+    font-size: 12px; } }
 
 .sliderLine {
   padding: 15px 0;
@@ -2715,6 +2727,9 @@ body {
 
 .productLineTitle {
   margin-bottom: 80px; }
+
+.productBlock {
+  height: 100%; }
 
 .prodBlock__imgWrap {
   padding-top: 111.112%;
@@ -2812,14 +2827,25 @@ body {
 .footer__logoText {
   font-size: 10px; }
 
+@media (max-width: 991.98px) {
+  .footer__menuWrap {
+    display: none; } }
+
 .footer__menuLinkItem {
   text-decoration: underline;
   line-height: 30px; }
   .footer__menuLinkItem:hover {
     color: #7e7e7e; }
+  @media (max-width: 1350px) {
+    .footer__menuLinkItem {
+      font-size: 10px; } }
 
 .socTitle {
   margin-bottom: 30px; }
+
+@media (max-width: 1199.98px) {
+  .signUpWrap {
+    margin: 30px auto 0; } }
 
 .signUpTitle {
   margin-bottom: 30px; }
