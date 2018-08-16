@@ -248,6 +248,20 @@ $('.productSlider').each(function () {
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
+            },
+            {
+                breakpoint: 991.98,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 575.98,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
         ]
     });

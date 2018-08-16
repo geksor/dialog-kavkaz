@@ -58,19 +58,37 @@
         <div class="header__mainLine">
             <div class="container">
                 <div class="row align-items-center justify-content-xl-between">
+                    <div class="btn_mobile col-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="32px"
+                             height="28px" viewBox="0 0 32 28">
+                            <rect x="0" y="0" width="32" height="4" fill="rgb(71, 181, 182)"></rect>
+                            <rect x="0" y="12" width="32" height="4" fill="rgb(71, 181, 182)"></rect>
+                            <rect x="0" y="24" width="32" height="4" fill="rgb(71, 181, 182)"></rect>
+                        </svg>
+                    </div>
                     <div class="logoWrap header__logoWrap col">
                         <a href="/" title="На главную">
                             <img src="images/dialog_kavkaz_logo.svg" alt="Диалог кавказ">
                         </a>
                     </div>
-                    <div class="searchWrap col-5 col-xl-6">
-                        <form class="searchForm">
+                    <div class="searchWrap col-auto col-lg-5 col-xl-6">
+                        <button class="openSearch">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16px" height="17px"  viewBox="0 0 16 17">
+                                <path fill-rule="evenodd" fill="rgb(71, 181, 182)"
+                                      d="M15.696,15.671 L11.884,11.827 C12.829,10.666 13.399,9.177 13.399,7.555 C13.399,3.835 10.406,0.817 6.717,0.817 C3.026,0.817 0.036,3.835 0.036,7.555 C0.036,11.276 3.026,14.294 6.717,14.294 C8.326,14.294 9.798,13.723 10.949,12.770 L14.761,16.611 C15.020,16.872 15.437,16.872 15.696,16.611 C15.955,16.353 15.955,15.929 15.696,15.671 ZM6.717,12.953 C3.763,12.953 1.363,10.531 1.363,7.555 C1.363,4.579 3.763,2.155 6.717,2.155 C9.668,2.155 12.072,4.579 12.072,7.555 C12.072,10.531 9.668,12.953 6.717,12.953 Z"/>
+                            </svg>
+                        </button>
+                        <form class="searchForm-lg">
                             <input type="text" class="searchInput" placeholder="Поиск информации на сайте...">
                             <button class="runSearch">
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="16px" height="17px">
+                                        width="16px" height="17px"  viewBox="0 0 16 17">
                                     <path fill-rule="evenodd" fill="rgb(71, 181, 182)"
                                           d="M15.696,15.671 L11.884,11.827 C12.829,10.666 13.399,9.177 13.399,7.555 C13.399,3.835 10.406,0.817 6.717,0.817 C3.026,0.817 0.036,3.835 0.036,7.555 C0.036,11.276 3.026,14.294 6.717,14.294 C8.326,14.294 9.798,13.723 10.949,12.770 L14.761,16.611 C15.020,16.872 15.437,16.872 15.696,16.611 C15.955,16.353 15.955,15.929 15.696,15.671 ZM6.717,12.953 C3.763,12.953 1.363,10.531 1.363,7.555 C1.363,4.579 3.763,2.155 6.717,2.155 C9.668,2.155 12.072,4.579 12.072,7.555 C12.072,10.531 9.668,12.953 6.717,12.953 Z"/>
                                 </svg>
@@ -218,7 +236,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="sliderCol col-5">
+                    <div class="sliderCol col-12 col-lg-5">
                         <img src="images/12.jpg" alt="12.jpg">
                         <div class="slider__arrowBlock">
                             <button class="slider__arrow prev">
@@ -902,12 +920,12 @@
             <div class="container">
                 <h2 class="brandsLineTitle">ПОПУЛЯРНЫЕ БРЕНДЫ</h2>
                 <div class="row">
-                    <div class="brandWrap col-2"><a href="#"><img src="images/3.png" alt="anna"></a></div>
-                    <div class="brandWrap col-2"><a href="#"><img src="images/4.png" alt="atlantic"></a></div>
-                    <div class="brandWrap col-2"><a href="#"><img src="images/5.png" alt="alt"></a></div>
-                    <div class="brandWrap col-2"><a href="#"><img src="images/6.png" alt="alt"></a></div>
-                    <div class="brandWrap col-2"><a href="#"><img src="images/7.png" alt="alt"></a></div>
-                    <div class="brandWrap col-2"><a href="#"><img src="images/8.png" alt="alt"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/3.png" alt="anna"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/4.png" alt="atlantic"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/5.png" alt="alt"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/6.png" alt="alt"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/7.png" alt="alt"></a></div>
+                    <div class="brandWrap col-4 col-md-2"><a href="#"><img src="images/8.png" alt="alt"></a></div>
                 </div>
             </div>
         </div>
@@ -969,7 +987,7 @@
         <div class="container">
             <div class="footer__mineLine">
                 <div class="row">
-                    <div class="col-5 col-xl-3">
+                    <div class="col-12 col-sm-7 col-lg-5 col-xl-3">
                         <div class="footer__logoWrap row align-items-center">
                             <div class="col-4">
                                 <div class="footer__logo">
@@ -1065,7 +1083,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="signUpWrap col-6 col-xl-3">
+                    <div class="signUpWrap col-12 col-md-6 col-xl-3">
                         <p class="signUpTitle">Узнавай о новых поступлениях первым!</p>
                         <div class="container">
                             <form class="signUpForm row">

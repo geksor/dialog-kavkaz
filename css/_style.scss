@@ -265,12 +265,13 @@ body{
 //--siteDefault--//
 
 .def_title{
-  @extend .f_Montserrat-Medium,.fs_24,.fc_2e2e2e,.fls_18,.text-transform_uppercase;
+  @extend .f_Montserrat-Medium,.fs_24,.fc_2e2e2e,.fls_18,.text-transform_uppercase,.text-align_center;
   @include media-breakpoint-up(sm){
     font-size: 32px;
   }
   @include media-breakpoint-up(md){
     font-size: 36px;
+    text-align: left;
   }
 }
 .def_desc{
@@ -308,6 +309,11 @@ body{
 }
 .slider__arrowBlock{
   @extend .absolute,.flex;
+}
+.btn_mobile{
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
 }
 
 
@@ -378,13 +384,36 @@ body{
   @extend .fc_7e7e7e;
 }
 .header__mainLine{
-  //padding-top: 25px;
+  @include media-breakpoint-down(md){
+    padding: 10px 0;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 10px 0 0;
+  }
 }
 .header__logoWrap{
   padding-top: 25px;
+  @include media-breakpoint-down(md){
+    padding-top: 0;
+  }
 }
-.searchForm{
+.searchForm-lg{
   @extend .relative;
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+}
+.openSearch{
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+  svg{
+    width: 48px;
+    height: auto;
+    @include media-breakpoint-down(sm){
+      width: 35px;
+    }
+  }
 }
 .searchInput{
   @extend .f_Montserrat-Regular,.fs_14,.fc_7e7e7e,.fls_07;
@@ -400,13 +429,20 @@ body{
   top: 14px;
   bottom: 14px;
 }
+.header__callBackWrap{
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+}
 .header__callBackBtn{
   @extend .def_button,.fc_47b5b6;
   width: 100%;
   border-color: #47b5b6;
-  &:hover{
-    background-color: #47b5b6;
-    color: #ffffff;
+  @include media-breakpoint-up(lg){
+    &:hover{
+      background-color: #47b5b6;
+      color: #ffffff;
+    }
   }
 }
 .header__sessionLink{
@@ -414,9 +450,23 @@ body{
   a{
     @extend .flex,.align-items-center,.justify-content-between,.flex-column;
     min-height: 55px;
+    @include media-breakpoint-down(sm){
+      min-height: auto;
+      span{
+        display: none;
+      }
+    }
   }
   @include media-breakpoint-down(lg){
     padding: 0 10px;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 0 15px;
+  }
+}
+.wishListLink{
+  @include media-breakpoint-down(sm){
+    display: none;
   }
 }
 .header__menuLine{
@@ -454,8 +504,20 @@ body{
 }
 .sliderCol{
   font-size: 0;
+  &:first-child{
+    @include media-breakpoint-down(md){
+      display: none;
+    }
+  }
   &:last-child{
-    padding-left: 0;
+    @include media-breakpoint-up(md){
+      padding-left: 0;
+    }
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 .slider__arrow{
@@ -472,8 +534,10 @@ body{
     border-bottom-right-radius: 50%;
     padding-right: 10px;
   }
-  &:hover{
-    background-color: #ffffff;
+  @include media-breakpoint-up(lg){
+    &:hover{
+      background-color: #ffffff;
+    }
   }
   &:active{
     background-color: #e9e9e9;
@@ -487,10 +551,20 @@ body{
     right: 15px;
     top: 6px;
   }
+  @include media-breakpoint-down(sm){
+    padding-top: 40px;
+    .slider__arrowBlock{
+      top: 50px;
+    }
+  }
+
 }
 .productLineTitle{
   @extend .def_title;
   margin-bottom: 80px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 60px;
+  }
 }
 .productBlock{
   @extend .flex,.flex-column,.justify-content-between;
@@ -586,13 +660,23 @@ body{
 .brandsLine{
   padding-top: 100px;
   padding-bottom: 40px;
+  @include media-breakpoint-down(sm){
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
 }
 .brandsLineTitle{
   @extend .def_title;
   margin-bottom: 76px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 50px;
+  }
 }
 .brandWrap{
   @extend .flex,.align-items-center,.text-align_center;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 30px;
+  }
 }
 
 .optLine{
@@ -615,18 +699,34 @@ body{
   ul{
     line-height: 36px;
   }
+  @include media-breakpoint-down(sm){
+    padding: 60px 0 40px;
+    background: none;
+  }
 }
 .optTitle{
   @extend .def_title;
   margin-bottom: 75px;
+  @include media-breakpoint-down(sm){
+    margin-bottom: 40px;
+  }
 }
 
 .footer{
   background-color: #2e2e2e;
   padding: 85px 0 35px;
+  @include media-breakpoint-down(md){
+    padding: 45px 0 30px;
+  }
+  @include media-breakpoint-down(xs){
+    padding: 20px 0 10px;
+  }
 }
 .footer__logoWrap{
   height: 100%;
+  @include media-breakpoint-down(xs){
+    margin-bottom: 30px;
+  }
 }
 .footer__logo{
   font-size: 0;
@@ -654,6 +754,9 @@ body{
 .socTitle{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_fff,.text-transform_uppercase;
   margin-bottom: 30px;
+  @include media-breakpoint-down(xs){
+    margin-bottom: 10px;
+  }
 }
 .signUpWrap{
   @include media-breakpoint-down(lg){
