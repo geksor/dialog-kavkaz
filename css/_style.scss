@@ -103,6 +103,9 @@ $mobileMenuOpenColor: #ffffff;
 .fls_09{
   letter-spacing: .9px;
 }
+.fls_12{
+  letter-spacing: 1.2px;
+}
 .fls_15{
   letter-spacing: 1.5px;
 }
@@ -315,9 +318,18 @@ body{
     display: none;
   }
 }
+img{
+  object-fit: cover;
+  object-position: center;
+}
 
 
 //--siteStyle--//
+.header{
+  &.otherPage{
+    box-shadow: 0 0 30px 16px rgba(0, 0, 0, 0.1);
+  }
+}
 .header__variantLine{
   background-color: #2e2e2e;
   @include media-breakpoint-down(md){
@@ -493,20 +505,45 @@ body{
     font-size: 12px;
   }
 }
+.header__phoneWrap{
+  .phoneIcoWrap{
+    padding-right: 0;
+  }
+  a{
+    @extend .f_Montserrat-Medium,.fs_24,.fls_12,.fc_2e2e2e;
+    span{
+      @extend .fs_14,.fls_07,.fc_7e7e7e;
+    }
+    @media (min-width: 1199.98px) and (max-width: 1502px) {
+      font-size: 18px;
+      span{
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 .sliderLine{
   padding: 15px 0;
   background-color: #f2f2f2;
+  overflow: hidden;
   .slider__arrowBlock{
     left: 30px;
     bottom: 15px;
+  }
+  .sliderBgndBlur{
+    background: no-repeat center/cover;
+    -webkit-filter: blur(58px);
+    filter: blur(58px);
   }
 }
 .sliderCol{
   font-size: 0;
   &:first-child{
-    @include media-breakpoint-down(md){
-      display: none;
+    &:not(.roznica){
+      @include media-breakpoint-down(md){
+        display: none;
+      }
     }
   }
   &:last-child{
@@ -516,8 +553,6 @@ body{
   }
   img{
     width: 100%;
-    object-fit: cover;
-    object-position: center;
   }
 }
 .slider__arrow{
@@ -569,6 +604,9 @@ body{
 .productBlock{
   @extend .flex,.flex-column,.justify-content-between;
   height: 100%;
+  &.margin{
+    padding-bottom: 30px;
+  }
 }
 .prodBlock__imgWrap{
   @extend .relative;
@@ -577,7 +615,8 @@ body{
   img{
     @extend .absolute;
     top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .label{
     @extend .absolute,.f_Montserrat-Medium,.fc_fff,.text-transform_uppercase,.text-align_center;
@@ -621,6 +660,16 @@ body{
   @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_47b5b6,.text-align_center;
   margin-bottom: 20px;
 }
+.prodPrice{
+  @extend .f_Montserrat-Medium,.fs_18,.fls_09,.text-align_center;
+  color: #e269c4;
+  margin-bottom: 20px;
+  .oldPrice{
+    @extend .fs_14,.fls_07,.fc_7e7e7e;
+    text-decoration: line-through;
+    margin-right: 15px;
+  }
+}
 .prodBuyButton{
   @extend .def_button,.fc_fff,.text-transform_uppercase;
   background-color: #47b5b6;
@@ -660,6 +709,10 @@ body{
 .brandsLine{
   padding-top: 100px;
   padding-bottom: 40px;
+  &.roznica{
+    padding-top: 200px;
+    padding-bottom: 140px;
+  }
   @include media-breakpoint-down(sm){
     padding-top: 50px;
     padding-bottom: 0;
@@ -789,4 +842,79 @@ body{
   font-size: 10px;
   letter-spacing: .5px;
   margin-top: 55px;
+}
+
+.popularCategory__title{
+  @extend .def_title;
+  padding: 75px 0;
+  text-align: center;
+}
+.popularCategory__item{
+  @extend .relative;
+  margin-bottom: 30px;
+  &.long{
+    padding-top: 147.225%;
+    @include media-breakpoint-down(xs){
+      padding-top: 69.445%;
+      img{
+        object-position: top;
+      }
+    }
+  }
+  &.short{
+    padding-top: 69.445%;
+  }
+  img{
+    @extend .absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .categoryItemInfo{
+    @extend .absolute;
+    padding: 16px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  &:hover{
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+  }
+}
+
+.shopInfoLine{
+  padding-top: 110px;
+}
+.shopInfo__textContainer{
+  p{
+    @extend .f_Montserrat-Medium,.fs_14,.flh_24,.fls_07,.fc_7e7e7e;
+    &:not(:last-child){
+      margin-bottom: 55px;
+    }
+  }
+}
+.shopInfo__imageRow{
+  padding: 110px 0 55px;
+}
+.shopInfo__imageWrap{
+  margin-bottom: 30px;
+}
+.shopInfo__imageBlock{
+  @extend .relative;
+  padding-bottom: 65.31%;
+  img{
+    @extend .absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+.shopInfo__linkToMap{
+  @extend .prodBuyButton;
+}
+
+.pageTitle{
+  @extend .def_title;
+  padding: 90px 0;
 }

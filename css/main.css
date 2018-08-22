@@ -1210,7 +1210,7 @@ html {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .header__menuLinkItem, .prodStarWrap {
+.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__menuLinkItem, .prodStarWrap {
   justify-content: center !important; }
 
 .justify-content-between, .header__sessionLink a, .productBlock {
@@ -1225,7 +1225,7 @@ html {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
+.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -2379,7 +2379,7 @@ html {
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .optLine b, .socTitle, .signUpTitle, .signUpSubmit {
+.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .header__menuLinkItem, .header__phoneWrap a, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .optLine b, .socTitle, .signUpTitle, .signUpSubmit, .shopInfo__textContainer p {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2400,16 +2400,16 @@ html {
 .fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat, .footer__menuLinkItem {
   font-size: 12px; }
 
-.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodAvail, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit {
+.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p {
   font-size: 14px; }
 
 .fs_16, .left_menu {
   font-size: 16px; }
 
-.fs_18, .h {
+.fs_18, .h, .prodPrice {
   font-size: 18px; }
 
-.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
+.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__phoneWrap a {
   font-size: 24px; }
 
 .fs_30 {
@@ -2418,13 +2418,13 @@ html {
 .fs_36 {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
+.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .shopInfo__linkToMap, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
   color: #ffffff; }
 
-.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .prodCat, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine {
+.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .header__phoneWrap a span, .prodCat, .prodPrice .oldPrice, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine, .shopInfo__textContainer p {
   color: #7e7e7e; }
 
-.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__menuLinkItem, .prodName, .optLine b {
+.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__menuLinkItem, .header__phoneWrap a, .prodName, .optLine b {
   color: #2e2e2e; }
 
 .fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail {
@@ -2436,40 +2436,43 @@ html {
 .fls_06, .header__variantLabel .description, .header__getCity, .header__workMode, .footer__menuLinkItem {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .prodName, .prodCat, .prodAvail, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit {
+.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodCat, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p {
   letter-spacing: .7px; }
 
 .fls_08 {
   letter-spacing: .8px; }
 
-.fls_09 {
+.fls_09, .prodPrice {
   letter-spacing: .9px; }
+
+.fls_12, .header__phoneWrap a {
+  letter-spacing: 1.2px; }
 
 .fls_15 {
   letter-spacing: 1.5px; }
 
-.fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
+.fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
   letter-spacing: 1.8px; }
 
-.flh_24, .optLine {
+.flh_24, .optLine, .shopInfo__textContainer p {
   line-height: 24px; }
 
-.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .brandWrap {
+.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .brandWrap {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .footer__menuLinkItem, .socTitle, .signUpSubmit {
+.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .shopInfo__linkToMap, .footer__menuLinkItem, .socTitle, .signUpSubmit {
   text-transform: uppercase; }
 
-.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap {
+.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap {
   display: flex; }
 
 .flex_col, .page {
   flex-direction: column; }
 
-.relative, .main, .searchForm-lg, .prodBlock__imgWrap {
+.relative, .main, .searchForm-lg, .prodBlock__imgWrap, .popularCategory__item, .shopInfo__imageBlock {
   position: relative; }
 
-.absolute, .absolute_100prc, .slider__arrowBlock, .runSearch, .prodBlock__imgWrap img, .prodBlock__imgWrap .label {
+.absolute, .absolute_100prc, .slider__arrowBlock, .runSearch, .prodBlock__imgWrap img, .prodBlock__imgWrap .label, .popularCategory__item img, .popularCategory__item .categoryItemInfo, .shopInfo__imageBlock img {
   position: absolute; }
 
 .absolute_100prc {
@@ -2568,10 +2571,10 @@ body {
       fill: #ffffff; }
 
 @media (min-width: 576px) {
-  .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
     font-size: 32px; } }
 @media (min-width: 768px) {
-  .def_title, .productLineTitle, .brandsLineTitle, .optTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
     font-size: 36px;
     text-align: left; } }
 
@@ -2590,10 +2593,10 @@ body {
 .transitionColorBgndColor {
   transition: color .3s ease, background-color .3s ease; }
 
-.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .slideNavBtn, .signUpSubmit {
+.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .slideNavBtn, .signUpSubmit {
   transition: .3s ease; }
 
-.def_button, .header__callBackBtn, .prodBuyButton {
+.def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap {
   min-height: 50px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -2608,6 +2611,13 @@ body {
 @media (min-width: 992px) {
   .btn_mobile {
     display: none; } }
+
+img {
+  object-fit: cover;
+  object-position: center; }
+
+.header.otherPage {
+  box-shadow: 0 0 30px 16px rgba(0, 0, 0, 0.1); }
 
 .header__variantLine {
   background-color: #2e2e2e; }
@@ -2735,25 +2745,36 @@ body {
   .header__menuLinkItem {
     font-size: 12px; } }
 
+.header__phoneWrap .phoneIcoWrap {
+  padding-right: 0; }
+@media (min-width: 1199.98px) and (max-width: 1502px) {
+  .header__phoneWrap a {
+    font-size: 18px; }
+    .header__phoneWrap a span {
+      font-size: 12px; } }
+
 .sliderLine {
   padding: 15px 0;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  overflow: hidden; }
   .sliderLine .slider__arrowBlock {
     left: 30px;
     bottom: 15px; }
+  .sliderLine .sliderBgndBlur {
+    background: no-repeat center/cover;
+    -webkit-filter: blur(58px);
+    filter: blur(58px); }
 
 .sliderCol {
   font-size: 0; }
   @media (max-width: 991.98px) {
-    .sliderCol:first-child {
+    .sliderCol:first-child:not(.roznica) {
       display: none; } }
   @media (min-width: 768px) {
     .sliderCol:last-child {
       padding-left: 0; } }
   .sliderCol img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
+    width: 100%; }
 
 .slider__arrow {
   background-color: #f2f2f2;
@@ -2793,13 +2814,16 @@ body {
 
 .productBlock {
   height: 100%; }
+  .productBlock.margin {
+    padding-bottom: 30px; }
 
 .prodBlock__imgWrap {
   padding-top: 111.112%;
   overflow: hidden; }
   .prodBlock__imgWrap img {
     top: 0;
-    left: 0; }
+    width: 100%;
+    height: 100%; }
   .prodBlock__imgWrap .label {
     font-size: 10px;
     letter-spacing: .4px;
@@ -2828,18 +2852,25 @@ body {
 .prodAvail {
   margin-bottom: 20px; }
 
-.prodBuyButton {
+.prodPrice {
+  color: #e269c4;
+  margin-bottom: 20px; }
+  .prodPrice .oldPrice {
+    text-decoration: line-through;
+    margin-right: 15px; }
+
+.prodBuyButton, .shopInfo__linkToMap {
   background-color: #47b5b6;
   border-color: #47b5b6;
   max-width: 220px;
   width: 100%;
   margin: 0 auto; }
-  .prodBuyButton svg {
+  .prodBuyButton svg, .shopInfo__linkToMap svg {
     margin-right: 15px; }
-  .prodBuyButton:hover {
+  .prodBuyButton:hover, .shopInfo__linkToMap:hover {
     background-color: #ffffff;
     color: #47b5b6; }
-    .prodBuyButton:hover svg path {
+    .prodBuyButton:hover svg path, .shopInfo__linkToMap:hover svg path {
       fill: #47b5b6; }
 
 .prodStarWrap {
@@ -2857,6 +2888,9 @@ body {
 .brandsLine {
   padding-top: 100px;
   padding-bottom: 40px; }
+  .brandsLine.roznica {
+    padding-top: 200px;
+    padding-bottom: 140px; }
   @media (max-width: 767.98px) {
     .brandsLine {
       padding-top: 50px;
@@ -2961,6 +2995,56 @@ body {
   font-size: 10px;
   letter-spacing: .5px;
   margin-top: 55px; }
+
+.popularCategory__title {
+  padding: 75px 0;
+  text-align: center; }
+
+.popularCategory__item {
+  margin-bottom: 30px; }
+  .popularCategory__item.long {
+    padding-top: 147.225%; }
+    @media (max-width: 575.98px) {
+      .popularCategory__item.long {
+        padding-top: 69.445%; }
+        .popularCategory__item.long img {
+          object-position: top; } }
+  .popularCategory__item.short {
+    padding-top: 69.445%; }
+  .popularCategory__item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .popularCategory__item .categoryItemInfo {
+    padding: 16px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .popularCategory__item:hover {
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9); }
+
+.shopInfoLine {
+  padding-top: 110px; }
+
+.shopInfo__textContainer p:not(:last-child) {
+  margin-bottom: 55px; }
+
+.shopInfo__imageRow {
+  padding: 110px 0 55px; }
+
+.shopInfo__imageWrap {
+  margin-bottom: 30px; }
+
+.shopInfo__imageBlock {
+  padding-bottom: 65.31%; }
+  .shopInfo__imageBlock img {
+    width: 100%;
+    height: 100%; }
+
+.pageTitle {
+  padding: 90px 0; }
 
 .btn-hamburger {
   display: none;
