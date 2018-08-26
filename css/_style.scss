@@ -321,6 +321,13 @@ body{
 img{
   object-fit: cover;
   object-position: center;
+  &.imgFit{
+    @extend .absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 
@@ -681,7 +688,7 @@ img{
     margin-right: 15px;
   }
   &:hover{
-    background-color: #ffffff;
+    background-color: transparent;
     color: #47b5b6;
     svg{
       path{
@@ -917,4 +924,272 @@ img{
 .pageTitle{
   @extend .def_title;
   padding: 90px 0;
+}
+
+.breadCrumbsLine{
+  padding-top: 36px;
+}
+.breadcrumb{
+  @extend .f_Montserrat-Regular,.fs_12,.fls_06,.fc_7e7e7e,.flex,.align-items-center;
+  line-height: 14px;
+  li{
+    @extend .relative;
+    &:not(:first-child){
+      padding-left: 25px;
+      &:before{
+        @extend .absolute;
+        content: '';
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #47b5b6;
+        border-radius: 50%;
+      }
+    }
+    &.active{
+      color: #2e2e2e;
+    }
+    a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.pagination{
+  ul{
+    @extend .f_Montserrat-Medium,.fs_14,.fls_07,.flex,.fc_2e2e2e;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    li{
+      @extend .relative,.transitionAll;
+      width: 42px;
+      height: 42px;
+      border-radius: 2px;
+      background-color: #ffffff;
+      border: solid 1px #dedede;
+      &:not(:last-child){
+        margin-right: 1px;
+      }
+      &.active{
+        color: #ffffff;
+        background-color: #47b5b6;
+        border-color: transparent;
+      }
+      &:hover{
+        &:not(.active){
+          color: #ffffff;
+          background-color: #47b5b6;
+          border-color: transparent;
+        }
+      }
+      a,span{
+        @extend .absolute_100prc,.flex,.justify-content-center,.align-items-center;
+      }
+    }
+    @include media-breakpoint-down(md){
+      margin-bottom: 60px;
+    }
+    @include media-breakpoint-down(sm){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//CatalogPage
+.filterForm{
+}
+.filterItem{
+  padding: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+  label{
+    cursor: pointer;
+  }
+  h3{
+    @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2e2e;
+  }
+  &.sortBlock{
+    label{
+      width: 100%;
+      margin-top: 30px;
+    }
+    select{
+      @extend .f_Montserrat-Regular;
+      cursor: pointer;
+      min-height: 42px;
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      border: solid 1px #dedede;
+    }
+  }
+  &.checkBlock{
+    label{
+      @extend .flex,.align-items-center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-bottom: 24px;
+    }
+  }
+}
+.filterForm__checkWrap{
+  margin-right: 15px;
+}
+.filterForm__checkMask{
+  @extend .flex,.justify-content-center,.align-items-center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dedede;
+}
+.filterForm__checkbox{
+  &:checked + .filterForm__checkMask{
+    &:after{
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      background-color: #47b5b6;
+    }
+  }
+}
+.filterForm__submit{
+  @extend .prodBuyButton;
+  max-width: none;
+  margin-top: 60px;
+}
+.filterForm__checkColorWrap{
+  @extend .flex,.justify-content-between,.flex-wrap;
+  margin-top: 35px;
+  margin-right: -15px;
+  label{
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  .filterForm__checkColorMask{
+    @extend .flex,.align-items-center,.justify-content-center,.relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    border: solid 1px #dedede;
+    &:hover{
+      .bgndFilter{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .filterForm__checkbox{
+    &:checked + .filterForm__checkColorMask{
+      &:after{
+        @extend .relative;
+        content: url("./checked_color.svg");
+        font-size: 3px;
+        margin-left: 2px;
+      }
+      .bgndFilter{
+        background-color: rgba(0,0,0,0.5);
+      }
+
+    }
+  }
+}
+
+//ProductPage
+.productPage__productLine{
+  margin-top: 90px;
+  .imageWrap{
+    @extend .relative;
+    padding-top: 100%;
+  }
+}
+.productImageRow{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.productImageCol{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.productImageNav{
+  flex: 0 0 20%;
+  max-width: 20%;
+  .productImageCol{
+    &:not(:last-child){
+      margin-bottom: 24px;
+    }
+  }
+}
+.productViewImage{
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.productInfoBlock{
+  padding-left: 30px;
+}
+.productTitle{
+  @extend .def_title;
+  margin-bottom: 45px;
+}
+.prodPageStarWrap{
+  @extend .flex;
+  margin-bottom: 45px;
+}
+.prodPageTextBlock{
+  margin-bottom: 45px;
+  .prodTextRow{
+    @extend .f_Montserrat-Medium,.fs_14,.fls_07;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    span{
+      @extend .f_Montserrat-SemiBold,.fc_2e2e2e;
+    }
+  }
+  .model{
+    @extend .fc_7e7e7e;
+  }
+  .avail{
+    @extend .fc_47b5b6;
+  }
+}
+.blockTitle{
+  @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2e2e;
+  margin-bottom: 25px;
+}
+.prodPageVarBlock{
+  .blockContent{
+    @extend .flex;
+  }
+  .varBlock{
+    width: 110px;
+    &:not(:last-child){
+      margin-right: 5px;
+    }
+    &.active{
+      .varBlockImage{
+        border-color: #47b5b6;
+      }
+    }
+  }
+  .varBlockImage{
+    padding: 3px;
+    border: solid 2px transparent;
+    margin-bottom: 10px;
+  }
+  .varBlockText{
+    @extend .f_Montserrat-Regular,.fs_12,.fls_06,.fc_2e2e2e,.text-align_center;
+  }
 }

@@ -1195,7 +1195,7 @@ html {
 .flex-column-reverse {
   flex-direction: column-reverse !important; }
 
-.flex-wrap {
+.flex-wrap, .filterForm__checkColorWrap {
   flex-wrap: wrap !important; }
 
 .flex-nowrap {
@@ -1210,10 +1210,10 @@ html {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__menuLinkItem, .prodStarWrap {
+.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__menuLinkItem, .prodStarWrap, .pagination ul li a, .pagination ul li span, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask {
   justify-content: center !important; }
 
-.justify-content-between, .header__sessionLink a, .productBlock {
+.justify-content-between, .header__sessionLink a, .productBlock, .filterForm__checkColorWrap {
   justify-content: space-between !important; }
 
 .justify-content-around {
@@ -1225,7 +1225,7 @@ html {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap {
+.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -2373,19 +2373,19 @@ html {
 @font-face {
   font-family: Montserrat-SemiBold;
   src: url(../css/fonts/Montserrat-SemiBold.ttf); }
-.f_Montserrat-SemiBold {
+.f_Montserrat-SemiBold, .filterItem h3, .prodPageTextBlock .prodTextRow span, .blockTitle {
   font-family: Montserrat-SemiBold, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .header__menuLinkItem, .header__phoneWrap a, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .optLine b, .socTitle, .signUpTitle, .signUpSubmit, .shopInfo__textContainer p {
+.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .header__menuLinkItem, .header__phoneWrap a, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .optLine b, .socTitle, .signUpTitle, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .prodPageTextBlock .prodTextRow {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
   font-family: Montserrat-Regular;
   src: url(../css/fonts/Montserrat-Regular.ttf); }
-.f_Montserrat-Regular, body, .def_desc, .header__variantLabel .description, .header__getCity, .header__workMode, .searchInput, .header__sessionLink, .optLine, .footer__logoText, .footer__menuLinkItem, .signUpInput, .footer__copyrightLine {
+.f_Montserrat-Regular, body, .def_desc, .header__variantLabel .description, .header__getCity, .header__workMode, .searchInput, .header__sessionLink, .optLine, .footer__logoText, .footer__menuLinkItem, .signUpInput, .footer__copyrightLine, .breadcrumb, .filterItem.sortBlock select, .prodPageVarBlock .varBlockText {
   font-family: Montserrat-Regular, sans-serif; }
 
 @font-face {
@@ -2397,10 +2397,10 @@ html {
 .fs_10, .header__sessionLink {
   font-size: 10px; }
 
-.fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat, .footer__menuLinkItem {
+.fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat, .footer__menuLinkItem, .breadcrumb, .prodPageVarBlock .varBlockText {
   font-size: 12px; }
 
-.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p {
+.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle {
   font-size: 14px; }
 
 .fs_16, .left_menu {
@@ -2409,7 +2409,7 @@ html {
 .fs_18, .h, .prodPrice {
   font-size: 18px; }
 
-.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__phoneWrap a {
+.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__phoneWrap a {
   font-size: 24px; }
 
 .fs_30 {
@@ -2418,25 +2418,25 @@ html {
 .fs_36 {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .shopInfo__linkToMap, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
+.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
   color: #ffffff; }
 
-.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .header__phoneWrap a span, .prodCat, .prodPrice .oldPrice, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine, .shopInfo__textContainer p {
+.fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .header__phoneWrap a span, .prodCat, .prodPrice .oldPrice, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine, .shopInfo__textContainer p, .breadcrumb, .prodPageTextBlock .model {
   color: #7e7e7e; }
 
-.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__menuLinkItem, .header__phoneWrap a, .prodName, .optLine b {
+.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__menuLinkItem, .header__phoneWrap a, .prodName, .optLine b, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow span, .blockTitle, .prodPageVarBlock .varBlockText {
   color: #2e2e2e; }
 
-.fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail {
+.fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail, .prodPageTextBlock .avail {
   color: #47b5b6; }
 
 .fls_05, .header__sessionLink, .footer__logoText {
   letter-spacing: .5px; }
 
-.fls_06, .header__variantLabel .description, .header__getCity, .header__workMode, .footer__menuLinkItem {
+.fls_06, .header__variantLabel .description, .header__getCity, .header__workMode, .footer__menuLinkItem, .breadcrumb, .prodPageVarBlock .varBlockText {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodCat, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p {
+.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodCat, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle {
   letter-spacing: .7px; }
 
 .fls_08 {
@@ -2451,31 +2451,31 @@ html {
 .fls_15 {
   letter-spacing: 1.5px; }
 
-.fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
+.fls_18, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle {
   letter-spacing: 1.8px; }
 
 .flh_24, .optLine, .shopInfo__textContainer p {
   line-height: 24px; }
 
-.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .brandWrap {
+.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .brandWrap, .prodPageVarBlock .varBlockText {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .shopInfo__linkToMap, .footer__menuLinkItem, .socTitle, .signUpSubmit {
+.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .footer__menuLinkItem, .socTitle, .signUpSubmit {
   text-transform: uppercase; }
 
-.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap {
+.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap, .filterForm__checkColorWrap .filterForm__checkColorMask, .prodPageStarWrap, .prodPageVarBlock .blockContent {
   display: flex; }
 
 .flex_col, .page {
   flex-direction: column; }
 
-.relative, .main, .searchForm-lg, .prodBlock__imgWrap, .popularCategory__item, .shopInfo__imageBlock {
+.relative, .main, .searchForm-lg, .prodBlock__imgWrap, .popularCategory__item, .shopInfo__imageBlock, .breadcrumb li, .pagination ul li, .filterForm__checkColorWrap .filterForm__checkColorMask, .filterForm__checkColorWrap .filterForm__checkbox:checked + .filterForm__checkColorMask:after, .productPage__productLine .imageWrap {
   position: relative; }
 
-.absolute, .absolute_100prc, .slider__arrowBlock, .runSearch, .prodBlock__imgWrap img, .prodBlock__imgWrap .label, .popularCategory__item img, .popularCategory__item .categoryItemInfo, .shopInfo__imageBlock img {
+.absolute, .absolute_100prc, .pagination ul li a, .pagination ul li span, .slider__arrowBlock, img.imgFit, .runSearch, .prodBlock__imgWrap img, .prodBlock__imgWrap .label, .popularCategory__item img, .popularCategory__item .categoryItemInfo, .shopInfo__imageBlock img, .breadcrumb li:not(:first-child):before {
   position: absolute; }
 
-.absolute_100prc {
+.absolute_100prc, .pagination ul li a, .pagination ul li span {
   top: 0;
   right: 0;
   bottom: 0;
@@ -2571,10 +2571,10 @@ body {
       fill: #ffffff; }
 
 @media (min-width: 576px) {
-  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle {
     font-size: 32px; } }
 @media (min-width: 768px) {
-  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle {
+  .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle {
     font-size: 36px;
     text-align: left; } }
 
@@ -2593,10 +2593,10 @@ body {
 .transitionColorBgndColor {
   transition: color .3s ease, background-color .3s ease; }
 
-.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .slideNavBtn, .signUpSubmit {
+.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .slideNavBtn, .signUpSubmit, .pagination ul li {
   transition: .3s ease; }
 
-.def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap {
+.def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit {
   min-height: 50px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -2615,6 +2615,11 @@ body {
 img {
   object-fit: cover;
   object-position: center; }
+  img.imgFit {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .header.otherPage {
   box-shadow: 0 0 30px 16px rgba(0, 0, 0, 0.1); }
@@ -2859,18 +2864,18 @@ img {
     text-decoration: line-through;
     margin-right: 15px; }
 
-.prodBuyButton, .shopInfo__linkToMap {
+.prodBuyButton, .shopInfo__linkToMap, .filterForm__submit {
   background-color: #47b5b6;
   border-color: #47b5b6;
   max-width: 220px;
   width: 100%;
   margin: 0 auto; }
-  .prodBuyButton svg, .shopInfo__linkToMap svg {
+  .prodBuyButton svg, .shopInfo__linkToMap svg, .filterForm__submit svg {
     margin-right: 15px; }
-  .prodBuyButton:hover, .shopInfo__linkToMap:hover {
-    background-color: #ffffff;
+  .prodBuyButton:hover, .shopInfo__linkToMap:hover, .filterForm__submit:hover {
+    background-color: transparent;
     color: #47b5b6; }
-    .prodBuyButton:hover svg path, .shopInfo__linkToMap:hover svg path {
+    .prodBuyButton:hover svg path, .shopInfo__linkToMap:hover svg path, .filterForm__submit:hover svg path {
       fill: #47b5b6; }
 
 .prodStarWrap {
@@ -3045,6 +3050,175 @@ img {
 
 .pageTitle {
   padding: 90px 0; }
+
+.breadCrumbsLine {
+  padding-top: 36px; }
+
+.breadcrumb {
+  line-height: 14px; }
+  .breadcrumb li:not(:first-child) {
+    padding-left: 25px; }
+    .breadcrumb li:not(:first-child):before {
+      content: '';
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #47b5b6;
+      border-radius: 50%; }
+  .breadcrumb li.active {
+    color: #2e2e2e; }
+  .breadcrumb li a {
+    text-decoration: underline; }
+    .breadcrumb li a:hover {
+      text-decoration: none; }
+
+.pagination ul {
+  margin-bottom: 100px;
+  margin-top: 50px; }
+  .pagination ul li {
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #dedede; }
+    .pagination ul li:not(:last-child) {
+      margin-right: 1px; }
+    .pagination ul li.active {
+      color: #ffffff;
+      background-color: #47b5b6;
+      border-color: transparent; }
+    .pagination ul li:hover:not(.active) {
+      color: #ffffff;
+      background-color: #47b5b6;
+      border-color: transparent; }
+  @media (max-width: 991.98px) {
+    .pagination ul {
+      margin-bottom: 60px; } }
+  @media (max-width: 767.98px) {
+    .pagination ul {
+      margin-bottom: 30px; } }
+
+.filterItem {
+  padding: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px; }
+  .filterItem label {
+    cursor: pointer; }
+  .filterItem.sortBlock label {
+    width: 100%;
+    margin-top: 30px; }
+  .filterItem.sortBlock select {
+    cursor: pointer;
+    min-height: 42px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 1px #dedede; }
+  .filterItem.checkBlock label {
+    width: 100%;
+    margin-bottom: 20px; }
+  .filterItem.checkBlock h3 {
+    margin-bottom: 24px; }
+
+.filterForm__checkWrap {
+  margin-right: 15px; }
+
+.filterForm__checkMask {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dedede; }
+
+.filterForm__checkbox:checked + .filterForm__checkMask:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #47b5b6; }
+
+.filterForm__submit {
+  max-width: none;
+  margin-top: 60px; }
+
+.filterForm__checkColorWrap {
+  margin-top: 35px;
+  margin-right: -15px; }
+  .filterForm__checkColorWrap label {
+    margin-right: 15px;
+    margin-bottom: 20px; }
+  .filterForm__checkColorWrap .filterForm__checkColorMask {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    border: solid 1px #dedede; }
+    .filterForm__checkColorWrap .filterForm__checkColorMask:hover .bgndFilter {
+      background-color: rgba(0, 0, 0, 0.5); }
+  .filterForm__checkColorWrap .filterForm__checkbox:checked + .filterForm__checkColorMask:after {
+    content: url("./checked_color.svg");
+    font-size: 3px;
+    margin-left: 2px; }
+  .filterForm__checkColorWrap .filterForm__checkbox:checked + .filterForm__checkColorMask .bgndFilter {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.productPage__productLine {
+  margin-top: 90px; }
+  .productPage__productLine .imageWrap {
+    padding-top: 100%; }
+
+.productImageRow {
+  margin-left: -12px;
+  margin-right: -12px; }
+
+.productImageCol {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.productImageNav {
+  flex: 0 0 20%;
+  max-width: 20%; }
+  .productImageNav .productImageCol:not(:last-child) {
+    margin-bottom: 24px; }
+
+.productViewImage {
+  flex: 0 0 80%;
+  max-width: 80%; }
+
+.productInfoBlock {
+  padding-left: 30px; }
+
+.productTitle {
+  margin-bottom: 45px; }
+
+.prodPageStarWrap {
+  margin-bottom: 45px; }
+
+.prodPageTextBlock {
+  margin-bottom: 45px; }
+  .prodPageTextBlock .prodTextRow:not(:last-child) {
+    margin-bottom: 20px; }
+
+.blockTitle {
+  margin-bottom: 25px; }
+
+.prodPageVarBlock .varBlock {
+  width: 110px; }
+  .prodPageVarBlock .varBlock:not(:last-child) {
+    margin-right: 5px; }
+  .prodPageVarBlock .varBlock.active .varBlockImage {
+    border-color: #47b5b6; }
+.prodPageVarBlock .varBlockImage {
+  padding: 3px;
+  border: solid 2px transparent;
+  margin-bottom: 10px; }
 
 .btn-hamburger {
   display: none;
