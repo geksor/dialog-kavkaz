@@ -1141,18 +1141,22 @@ img{
 }
 .productTitle{
   @extend .def_title;
-  margin-bottom: 45px;
+  margin-top: -15px;
+  margin-bottom: 35px;
 }
 .prodPageStarWrap{
   @extend .flex;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
+  .starBlock{
+    cursor: pointer;
+  }
 }
 .prodPageTextBlock{
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   .prodTextRow{
     @extend .f_Montserrat-Medium,.fs_14,.fls_07;
     &:not(:last-child){
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     span{
       @extend .f_Montserrat-SemiBold,.fc_2e2e2e;
@@ -1167,18 +1171,22 @@ img{
 }
 .blockTitle{
   @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_2e2e2e;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .prodPageVarBlock{
+  margin-bottom: 25px;
   .blockContent{
     @extend .flex;
   }
   .varBlock{
     width: 110px;
+    &:not(.active){
+      cursor: pointer;
+    }
     &:not(:last-child){
       margin-right: 5px;
     }
-    &.active{
+    &.active, &:hover{
       .varBlockImage{
         border-color: #47b5b6;
       }
@@ -1191,5 +1199,51 @@ img{
   }
   .varBlockText{
     @extend .f_Montserrat-Regular,.fs_12,.fls_06,.fc_2e2e2e,.text-align_center;
+  }
+}
+.prodPage__countRow{
+  @extend .flex,.align-items-center;
+  margin-bottom: 35px;
+  .prodPage__countItem{
+    @extend .flex,.justify-content-center,.align-items-center,.f_Montserrat-Medium,.fs_24,.fc_47b5b6;
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #dedede;
+    &:not(:last-child){
+      margin-right: 1px;
+    }
+    &.input{
+      @extend .fs_14,.fls_07,.fc_2e2e2e,.text-align_center;
+    }
+    &:hover{
+      &:not(.input){
+        background-color: #dedede;
+      }
+    }
+  }
+}
+.prodPage__buttonBlock{
+  @extend .flex,.align-items-center;
+  .prodBuyButton{
+    max-width: 200px;
+    margin: 0;
+    &:not(:last-child){
+      margin-right: 15px;
+    }
+  }
+  .wishListBtn{
+    @extend .prodBuyButton;
+    background-color: #f4b757;
+    border-color: #f4b757;
+    &:hover{
+      color: #f4b757;
+      svg{
+        path{
+          fill: #f4b757;
+        }
+      }
+    }
   }
 }

@@ -1210,7 +1210,7 @@ html {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__menuLinkItem, .prodStarWrap, .pagination ul li a, .pagination ul li span, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask {
+.justify-content-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .header__menuLinkItem, .prodStarWrap, .pagination ul li a, .pagination ul li span, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask, .prodPage__countRow .prodPage__countItem {
   justify-content: center !important; }
 
 .justify-content-between, .header__sessionLink a, .productBlock, .filterForm__checkColorWrap {
@@ -1225,7 +1225,7 @@ html {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask {
+.align-items-center, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .header__sessionLink a, .header__menuLinkItem, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap .filterForm__checkColorMask, .prodPage__countRow, .prodPage__countRow .prodPage__countItem, .prodPage__buttonBlock {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -2379,7 +2379,7 @@ html {
 @font-face {
   font-family: Montserrat-Medium;
   src: url(../css/fonts/Montserrat-Medium.ttf); }
-.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .header__menuLinkItem, .header__phoneWrap a, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .optLine b, .socTitle, .signUpTitle, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .prodPageTextBlock .prodTextRow {
+.f_Montserrat-Medium, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .header__variantLabel .title, .header__menuLinkItem, .header__phoneWrap a, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .optLine b, .socTitle, .signUpTitle, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .prodPageTextBlock .prodTextRow, .prodPage__countRow .prodPage__countItem {
   font-family: Montserrat-Medium, sans-serif; }
 
 @font-face {
@@ -2400,7 +2400,7 @@ html {
 .fs_12, .header__variantLabel .description, .header__getCity, .header__workMode, .prodCat, .footer__menuLinkItem, .breadcrumb, .prodPageVarBlock .varBlockText {
   font-size: 12px; }
 
-.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle {
+.fs_14, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle, .prodPage__countRow .prodPage__countItem.input {
   font-size: 14px; }
 
 .fs_16, .left_menu {
@@ -2409,7 +2409,7 @@ html {
 .fs_18, .h, .prodPrice {
   font-size: 18px; }
 
-.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__phoneWrap a {
+.fs_24, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__phoneWrap a, .prodPage__countRow .prodPage__countItem {
   font-size: 24px; }
 
 .fs_30 {
@@ -2418,16 +2418,16 @@ html {
 .fs_36 {
   font-size: 36px; }
 
-.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
+.fc_fff, .left_menu, .header__getCity, .prodBlock__imgWrap .label, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .footer__menuLinkItem, .socTitle, .signUpTitle, .signUpSubmit {
   color: #ffffff; }
 
 .fc_7e7e7e, .header__variantLabel .title, .header__variantLabel .description, .header__workMode, .searchInput, .header__sessionLink, .header__phoneWrap a span, .prodCat, .prodPrice .oldPrice, .optLine, .footer__logoText, .signUpInput, .footer__copyrightLine, .shopInfo__textContainer p, .breadcrumb, .prodPageTextBlock .model {
   color: #7e7e7e; }
 
-.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__menuLinkItem, .header__phoneWrap a, .prodName, .optLine b, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow span, .blockTitle, .prodPageVarBlock .varBlockText {
+.fc_2e2e2e, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__menuLinkItem, .header__phoneWrap a, .prodName, .optLine b, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow span, .blockTitle, .prodPageVarBlock .varBlockText, .prodPage__countRow .prodPage__countItem.input {
   color: #2e2e2e; }
 
-.fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail, .prodPageTextBlock .avail {
+.fc_47b5b6, .header__variantLabel.active .title, .header__callBackBtn, .prodAvail, .prodPageTextBlock .avail, .prodPage__countRow .prodPage__countItem {
   color: #47b5b6; }
 
 .fls_05, .header__sessionLink, .footer__logoText {
@@ -2436,7 +2436,7 @@ html {
 .fls_06, .header__variantLabel .description, .header__getCity, .header__workMode, .footer__menuLinkItem, .breadcrumb, .prodPageVarBlock .varBlockText {
   letter-spacing: .6px; }
 
-.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodCat, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle {
+.fls_07, .def_desc, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .header__variantLabel .title, .searchInput, .header__menuLinkItem, .header__phoneWrap a span, .prodName, .prodCat, .prodAvail, .prodPrice .oldPrice, .optLine, .socTitle, .signUpTitle, .signUpInput, .signUpSubmit, .shopInfo__textContainer p, .pagination ul, .filterItem h3, .prodPageTextBlock .prodTextRow, .blockTitle, .prodPage__countRow .prodPage__countItem.input {
   letter-spacing: .7px; }
 
 .fls_08 {
@@ -2457,13 +2457,13 @@ html {
 .flh_24, .optLine, .shopInfo__textContainer p {
   line-height: 24px; }
 
-.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .brandWrap, .prodPageVarBlock .varBlockText {
+.text-align_center, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .def_desc, .header__variantLabel, .header__sessionLink, .prodBlock__imgWrap .label, .prodName, .prodCat, .prodAvail, .prodPrice, .brandWrap, .prodPageVarBlock .varBlockText, .prodPage__countRow .prodPage__countItem.input {
   text-align: center; }
 
-.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .footer__menuLinkItem, .socTitle, .signUpSubmit {
+.text-transform_uppercase, .left_menu, .def_title, .productLineTitle, .brandsLineTitle, .optTitle, .popularCategory__title, .pageTitle, .productTitle, .header__variantLabel .title, .header__sessionLink, .header__menuLinkItem, .prodBlock__imgWrap .label, .prodName, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .footer__menuLinkItem, .socTitle, .signUpSubmit {
   text-transform: uppercase; }
 
-.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap, .filterForm__checkColorWrap .filterForm__checkColorMask, .prodPageStarWrap, .prodPageVarBlock .blockContent {
+.flex, .page, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .slider__arrowBlock, .header__sessionLink a, .header__menuLinkItem, .productBlock, .prodStarWrap, .brandWrap, .breadcrumb, .pagination ul, .pagination ul li a, .pagination ul li span, .filterItem.checkBlock label, .filterForm__checkMask, .filterForm__checkColorWrap, .filterForm__checkColorWrap .filterForm__checkColorMask, .prodPageStarWrap, .prodPageVarBlock .blockContent, .prodPage__countRow, .prodPage__countRow .prodPage__countItem, .prodPage__buttonBlock {
   display: flex; }
 
 .flex_col, .page {
@@ -2593,10 +2593,10 @@ body {
 .transitionColorBgndColor {
   transition: color .3s ease, background-color .3s ease; }
 
-.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .slideNavBtn, .signUpSubmit, .pagination ul li {
+.transitionAll, .def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn, .slideNavBtn, .signUpSubmit, .pagination ul li {
   transition: .3s ease; }
 
-.def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit {
+.def_button, .header__callBackBtn, .prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn {
   min-height: 50px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -2864,18 +2864,18 @@ img {
     text-decoration: line-through;
     margin-right: 15px; }
 
-.prodBuyButton, .shopInfo__linkToMap, .filterForm__submit {
+.prodBuyButton, .shopInfo__linkToMap, .filterForm__submit, .prodPage__buttonBlock .wishListBtn {
   background-color: #47b5b6;
   border-color: #47b5b6;
   max-width: 220px;
   width: 100%;
   margin: 0 auto; }
-  .prodBuyButton svg, .shopInfo__linkToMap svg, .filterForm__submit svg {
+  .prodBuyButton svg, .shopInfo__linkToMap svg, .filterForm__submit svg, .prodPage__buttonBlock .wishListBtn svg {
     margin-right: 15px; }
-  .prodBuyButton:hover, .shopInfo__linkToMap:hover, .filterForm__submit:hover {
+  .prodBuyButton:hover, .shopInfo__linkToMap:hover, .filterForm__submit:hover, .prodPage__buttonBlock .wishListBtn:hover {
     background-color: transparent;
     color: #47b5b6; }
-    .prodBuyButton:hover svg path, .shopInfo__linkToMap:hover svg path, .filterForm__submit:hover svg path {
+    .prodBuyButton:hover svg path, .shopInfo__linkToMap:hover svg path, .filterForm__submit:hover svg path, .prodPage__buttonBlock .wishListBtn:hover svg path {
       fill: #47b5b6; }
 
 .prodStarWrap {
@@ -3196,29 +3196,62 @@ img {
   padding-left: 30px; }
 
 .productTitle {
-  margin-bottom: 45px; }
+  margin-top: -15px;
+  margin-bottom: 35px; }
 
 .prodPageStarWrap {
-  margin-bottom: 45px; }
+  margin-bottom: 35px; }
+  .prodPageStarWrap .starBlock {
+    cursor: pointer; }
 
 .prodPageTextBlock {
-  margin-bottom: 45px; }
+  margin-bottom: 35px; }
   .prodPageTextBlock .prodTextRow:not(:last-child) {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
 
 .blockTitle {
-  margin-bottom: 25px; }
+  margin-bottom: 20px; }
 
-.prodPageVarBlock .varBlock {
-  width: 110px; }
-  .prodPageVarBlock .varBlock:not(:last-child) {
-    margin-right: 5px; }
-  .prodPageVarBlock .varBlock.active .varBlockImage {
-    border-color: #47b5b6; }
-.prodPageVarBlock .varBlockImage {
-  padding: 3px;
-  border: solid 2px transparent;
-  margin-bottom: 10px; }
+.prodPageVarBlock {
+  margin-bottom: 25px; }
+  .prodPageVarBlock .varBlock {
+    width: 110px; }
+    .prodPageVarBlock .varBlock:not(.active) {
+      cursor: pointer; }
+    .prodPageVarBlock .varBlock:not(:last-child) {
+      margin-right: 5px; }
+    .prodPageVarBlock .varBlock.active .varBlockImage, .prodPageVarBlock .varBlock:hover .varBlockImage {
+      border-color: #47b5b6; }
+  .prodPageVarBlock .varBlockImage {
+    padding: 3px;
+    border: solid 2px transparent;
+    margin-bottom: 10px; }
+
+.prodPage__countRow {
+  margin-bottom: 35px; }
+  .prodPage__countRow .prodPage__countItem {
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #dedede; }
+    .prodPage__countRow .prodPage__countItem:not(:last-child) {
+      margin-right: 1px; }
+    .prodPage__countRow .prodPage__countItem:hover:not(.input) {
+      background-color: #dedede; }
+
+.prodPage__buttonBlock .prodBuyButton, .prodPage__buttonBlock .shopInfo__linkToMap, .prodPage__buttonBlock .filterForm__submit, .prodPage__buttonBlock .wishListBtn {
+  max-width: 200px;
+  margin: 0; }
+  .prodPage__buttonBlock .prodBuyButton:not(:last-child), .prodPage__buttonBlock .shopInfo__linkToMap:not(:last-child), .prodPage__buttonBlock .filterForm__submit:not(:last-child), .prodPage__buttonBlock .wishListBtn:not(:last-child) {
+    margin-right: 15px; }
+.prodPage__buttonBlock .wishListBtn {
+  background-color: #f4b757;
+  border-color: #f4b757; }
+  .prodPage__buttonBlock .wishListBtn:hover {
+    color: #f4b757; }
+    .prodPage__buttonBlock .wishListBtn:hover svg path {
+      fill: #f4b757; }
 
 .btn-hamburger {
   display: none;
