@@ -775,6 +775,7 @@ img{
 .footer{
   background-color: #2e2e2e;
   padding: 85px 0 35px;
+  margin-top: 40px;
   @include media-breakpoint-down(md){
     padding: 45px 0 30px;
   }
@@ -923,7 +924,7 @@ img{
 
 .pageTitle{
   @extend .def_title;
-  padding: 90px 0;
+  padding: 70px 0 50px;
 }
 
 .breadCrumbsLine{
@@ -1002,6 +1003,10 @@ img{
 }
 
 //CatalogPage
+.catalogTitle{
+  @extend .pageTitle;
+  padding: 90px 0;
+}
 .filterForm{
 }
 .filterItem{
@@ -1245,5 +1250,195 @@ img{
         }
       }
     }
+  }
+}
+
+//PartnerPage
+.partnerPageTitle{
+  @extend .pageTitle;
+  padding: 70px 0 60px;
+}
+.partnerPage__description{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_2e2e2e;
+  margin-bottom: 62px;
+}
+.partnerPage__superBlock{
+  @extend .flex,.flex-column,.justify-content-center,.align-items-center,.f_Montserrat-Medium,.fs_14,.fls_07,.text-align_center;
+  height: 100%;
+  color: #000000;
+  background-color: #ffffff;
+  border: solid 1px #dedede;
+  padding: 20px 50px 30px;
+  p{
+    margin-top: 25px;
+  }
+}
+.partnerPage__registerLine{
+  @extend .flex;
+  margin: 100px 0 40px;
+  padding: 67px 30px 75px;
+  background: no-repeat left url("../images/18.png");
+  background-size: contain;
+  background-color: #908476;
+  .partnerPage__registerBlock{
+    @extend .fc_fff;
+    margin: 0 auto;
+    max-width: 641px;
+    .registerBlock__title, .registerDesc{
+      @extend .f_Montserrat-Medium;
+    }
+    .registerBlock__title{
+      @extend .fs_24,.fls_12;
+      margin-bottom: 15px;
+    }
+    .registerDesc,.registerText{
+      @extend .fs_14,.fls_07;
+    }
+    .registerText{
+      @extend .f_Montserrat-Regular;
+      margin-top: 25px;
+    }
+    .registerButton{
+      @extend .prodBuyButton;
+      margin: 50px 0 0;
+    }
+  }
+}
+
+//PromoPage
+.promoPage__rowPromo{
+  margin-bottom: 30px;
+}
+.promoPage__imageWrap{
+  @extend .relative;
+  padding-top: 60%;
+}
+.promoPage__textBlock{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_7e7e7e,.flh_24,.flex,.flex-column,.justify-content-between;
+  height: 100%;
+  .content{
+    p{
+      margin-bottom: 25px;
+    }
+  }
+}
+
+//AboutPage
+.aboutPage{
+  @extend .f_Montserrat-Regular,.fs_14,.fls_07,.fc_7e7e7e,.flh_24;
+  p,ul{
+    margin-bottom: 35px;
+  }
+  b{
+    @extend .f_Montserrat-Medium,.fc_2e2e2e;
+  }
+  .ulTitle{
+    line-height: 36px;
+    margin: 0;
+    .purple{
+      color: #d55e93;
+    }
+  }
+  ul{
+    line-height: 36px;
+  }
+}
+
+//CartPage
+.cartTable{
+  .hr{
+    border-bottom: solid 1px #dedede;
+  }
+}
+.cartTable__headerRow{
+  @extend .f_Montserrat-Medium,.fs_10,.flh_24,.fls_05,.fc_7e7e7e,.text-transform_uppercase;
+}
+.cartTable__itemRow{
+  .itemCol{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .imageWrap{
+    @extend .relative;
+    padding-top: 100%;
+  }
+}
+.cartTable__countRow{
+  @extend .prodPage__countRow;
+  font-size: 14px;
+  margin-bottom: 0;
+  .prodPage__countItem{
+    &:not(:last-child){
+      margin-right: 0;
+      border-right: none;
+    }
+  }
+}
+.prodNameCol{
+  @extend .f_Montserrat-Medium,.fs_14,.flh_24,.fls_07,.fc_2e2e2e
+}
+.priceCol{
+  @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_7e7e7e;
+  span{
+    @extend .fs_30,.fls_15,.fc_2e2e2e;
+  }
+}
+.delButton{
+  @extend .flex,.align-items-center,.justify-content-center,.transitionAll;
+  width: 30px;
+  height: 30px;
+  background-color: #eb4c4c;
+  border-radius: 50%;
+  &:hover{
+    background-color: #b44444;
+  }
+}
+.cartTable__totalBlock{
+  padding-top: 40px;
+  .totalPrice{
+    @extend .f_Montserrat-Medium,.fs_14,.fls_07,.fc_7e7e7e;
+    .title{
+      @extend .fc_2e2e2e;
+    }
+    .integer{
+      @extend .fs_30,.fls_15;
+      color: #d55e93;
+    }
+  }
+}
+
+//Contact
+.contactBlock{
+  @extend .f_Montserrat-Regular,.flex,.align-items-center,.justify-content-between;
+  padding: 35px;
+  height: 100%;
+  background-color: #ffffff;
+  border: solid 1px #dedede;
+  .number{
+    @extend .flex,.align-items-center,.justify-content-center,.fs_18,.fc_fff;
+    width: 60px;
+    height: 60px;
+    background-color: #47b5b6;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+}
+.contactBody{
+  @extend .fs_14,.fls_07,.fc_2e2e2e,.flh_24;
+  .contactTextRow{
+    &:not(:last-child){
+      &:not(.nonMargin){
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.mapRow{
+  border: solid 7px #f2f2f2;
+  margin-top: 60px;
+  .map{
+    max-height: 500px;
+    height: 70vw;
+    width: 100%;
   }
 }
